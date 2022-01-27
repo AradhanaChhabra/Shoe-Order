@@ -38,5 +38,15 @@ export const shoes = [
         price: "1664",
         categories: "sneakers",
         size:[36,37,39,40,41,43,45,46,48,49]
+    },
+    {
+        name: "Men Black Beesley 3.0 Printed Sliders ",
+        brand: "U.S. Polo Assn.",
+        img1: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15738236/2021/10/12/0192fb7f-eb28-4da7-bb01-8d8d70a2c8521634041409748-US-Polo-Assn-Men-Flip-Flops-3171634041409216-1.jpg",
+        img2: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15738236/2021/10/12/91c9639f-3175-4494-bbc4-064e4fcd7ed41634041409738-US-Polo-Assn-Men-Flip-Flops-3171634041409216-2.jpg",
+        img3: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15738236/2021/10/12/838e5a46-3d64-4fe4-afe9-1e24474921171634041409721-US-Polo-Assn-Men-Flip-Flops-3171634041409216-4.jpg",
+        price: "824",
+        categories: "flipFlops",
+        size:[36,37,39,40,41,43,45,46,48,49]
     }
 ]

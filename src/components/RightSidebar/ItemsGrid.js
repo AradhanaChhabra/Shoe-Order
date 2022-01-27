@@ -3,10 +3,12 @@ import {shoes} from '../../utilities/dummyData'
 import UnitItem from './UnitItem';
 import styles from './RightSide.module.css'
 
-const ItemsGrid = () => {
+const ItemsGrid = ({query}) => {
   let key = 0;
   const getKey=()=>key++;
-  const itemGrid = shoes.map((item) => {
+  const itemGrid = shoes.filter((obj) =>
+  JSON.stringify(obj).toLowerCase().includes(query.toLowerCase())
+).map((item) => {
     return (
       <UnitItem
         key={getKey()}

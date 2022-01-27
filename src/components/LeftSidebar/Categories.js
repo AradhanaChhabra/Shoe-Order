@@ -11,22 +11,22 @@ export const Categories = () => {
         <div className={styles.categoriesOptions}>
             <label className={styles.ctgLabels} key={1}>
                 Flip Flops
-                <input className={styles.ctgOpt} type="radio" name="ctgOpt" value="FlipFlops" />
+                <input className={styles.ctgOpt} type="radio" name="ctgOpt" value="flipFlops" />
                 <span className={styles.checkmark}></span>
             </label>
             <label className={styles.ctgLabels} key={2}>
                 Sneakers
-                <input className={styles.ctgOpt} type="radio" name="ctgOpt" value="Sneakers" />
+                <input className={styles.ctgOpt} type="radio" name="ctgOpt" value="sneakers" />
                 <span className={styles.checkmark}></span>
             </label>
             <label className={styles.ctgLabels} key={3}>
                 Lace-up Shoes
-                <input className={styles.ctgOpt} type="radio" name="ctgOpt" value="LaceUpShoes" />
+                <input className={styles.ctgOpt} type="radio" name="ctgOpt" value="laceUpShoes" />
                 <span className={styles.checkmark}></span>
             </label>
             <label className={styles.ctgLabels} key={4}>
                 Shoe Accessories
-                <input className={styles.ctgOpt} type="radio" name="ctgOpt" value="ShoeAccessories" />
+                <input className={styles.ctgOpt} type="radio" name="ctgOpt" value="shoeAccessories" />
                 <span className={styles.checkmark}></span>
             </label>
 

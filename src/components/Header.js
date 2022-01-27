@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import styles from './header.module.css'
 
-const Header = () => {
+const Header = ({searchSubmit}) => {
     const [search, setSearch] = useState();
 
     const changeSearchValue = (event) => {
         setSearch(event.target.value);
+        searchSubmit(event.target.value);
     }
     
     return <div className={styles.header}>

@@ -5,6 +5,7 @@
     width: 100%;
     background-color: #fff;
     flex-direction: column;
+    border-radius: 0 0 8px 0;
 }
 .header{
     display: flex;
