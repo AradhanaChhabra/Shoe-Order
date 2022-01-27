@@ -5,7 +5,8 @@ import styles from './RightSide.module.css'
 
 const ItemsGrid = ({query}) => {
   let key = 0;
-  const getKey=()=>key++;
+  const getKey = () => key++;
+  
   const itemGrid = shoes.filter((obj) =>
   JSON.stringify(obj).toLowerCase().includes(query.toLowerCase())
 ).map((item) => {
@@ -22,7 +23,8 @@ const ItemsGrid = ({query}) => {
         size={item.size}
       />
     )
-  });
+});
+  
   return <div className={styles.itemGrid}>
     {itemGrid}
   </div>;
