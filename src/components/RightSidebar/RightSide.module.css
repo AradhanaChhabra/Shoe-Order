@@ -1,6 +1,7 @@
 .container{
     margin-top: 2px;
     margin-left: 4px;
+    margin-bottom: 2px;
     padding: 20px 40px;
     width: 100%;
     background-color: #fff;
@@ -82,7 +83,7 @@ img{
 }
 .footerUnitImg{
     max-height: 50px;
-    max-width: 60px;
+    width: 50px;
     border-radius: 10px;
     margin-left: 10px;
 }
@@ -125,4 +126,12 @@ img{
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropDownBtn {
     background-color: rgb(234, 238, 240);
+  }
+  .error{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      padding: 150px;
   }

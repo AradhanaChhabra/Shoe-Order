@@ -5,13 +5,13 @@ import Size from './Size.js'
 import { Remaining } from './Remaining';
 import styles from './leftSide.module.css'
 
-const LeftSideColumn = ({categoryQuerySubmit}) => {
+const LeftSideColumn = ({categoryQuerySubmit,sizeQuerySubmit,sizeQuery}) => {
     return <div className={styles.container}>
+        {/* LEFT COLUMN SECTIONS */}
         <Categories categoryQuerySubmit={categoryQuerySubmit}/>
         <PriceRange />
-        <Size />
+        <Size sizeQuerySubmit={sizeQuerySubmit} sizeQuery={sizeQuery}/>
         <Remaining/>
-
     </div>;
     
 };

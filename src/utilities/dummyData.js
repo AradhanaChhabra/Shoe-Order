@@ -104,7 +104,7 @@ export const shoes = [
         img2: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/3/1/cba0525d-896b-4091-afc5-5c810a26fafb1614593367115-2.jpg",
         img3: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/3/1/f4e9739e-226b-4db1-b9db-c96f244bf6ca1614593367154-4.jpg",
         price: "629",
-        categories: ["laceUpShoes","sneakers"],
+        categories: "laceUpShoes",
         size:[36,37,39,40,41,43,45,46,48,49]
     }
 

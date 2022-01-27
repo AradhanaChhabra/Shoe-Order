@@ -7,7 +7,9 @@ export const Categories = ({ categoryQuerySubmit }) => {
     const changeCategory = (e) => {
         categoryQuerySubmit(e.target.value);
     }
+    
     return <div className={styles.categories}>
+        {/* heading */}
         <div className={styles.heading}>
             <div>Categories</div>
             <img className={styles.arrowImg} src={upArrow} alt="arrow icon" />
