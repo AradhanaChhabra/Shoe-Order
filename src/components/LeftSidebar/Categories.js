@@ -1,12 +1,11 @@
-import React,{useState} from 'react';
+import React from 'react';
 import styles from './leftSide.module.css'
 import upArrow from '../../icons/upArrow.svg'
 
-export const Categories = () => {
-    const [categoryQuery, setCategoryQuery] = useState("");
+export const Categories = ({ categoryQuerySubmit }) => {
+    
     const changeCategory = (e) => {
-        setCategoryQuery(e.target.value);
-        console.log(e.target.value);
+        categoryQuerySubmit(e.target.value);
     }
     return <div className={styles.categories}>
         <div className={styles.heading}>

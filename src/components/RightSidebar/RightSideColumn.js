@@ -3,7 +3,7 @@ import ItemsGrid from './ItemsGrid';
 import styles from './RightSide.module.css'
 import SortDropdown from './SortDropdown';
 
-const RightSideColumn = ({query}) => {
+const RightSideColumn = ({query,categoryQuery}) => {
     return <div className={styles.container}>
         <div className={styles.header}>
             <div className={styles.title}>
@@ -11,7 +11,7 @@ const RightSideColumn = ({query}) => {
             </div>
             <SortDropdown/>
         </div>
-        <ItemsGrid query={query}/>
+        <ItemsGrid query={query} categoryQuery={categoryQuery}/>
   </div>;
 };
 

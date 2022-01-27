@@ -6,14 +6,18 @@ import style from './dashboard.module.css';
 
 const Dashboard = () => {
     const [query, setQuery] = useState("");
+    const [categoryQuery, setCategoryQuery] = useState("");
     const searchSubmit = (value) => {
         setQuery(value);
+    }
+    const categoryQuerySubmit = (value) => {
+        setCategoryQuery(value);
     }
     return <div className={style.dashboard}>
         <Header searchSubmit={ searchSubmit}/>
         <div className={style.body}>
-            <LeftSideColumn />
-            <RightSideColumn query={query}/>
+            <LeftSideColumn categoryQuerySubmit={categoryQuerySubmit}/>
+            <RightSideColumn query={query} categoryQuery={categoryQuery}/>
         </div>
     </div>;
 };
