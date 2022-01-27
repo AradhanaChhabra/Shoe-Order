@@ -1,0 +1,136 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 0 10px;
+    width: 20%;
+    min-height: calc(100% - 40px - 50px);
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 2px 0 2px;
+}
+.arrowImg{
+    height: 14px;
+}
+.categoriesOptions{
+    background-color: #fff;
+    padding: 18px;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.ctgLabels{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 38px;
+    margin-bottom: 12px;
+}
+.ctgOpt{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+/* On mouse-over, add a grey background color */
+.ctgLabels:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+/* When the radio button is checked, add a black background */
+.ctgLabels input:checked ~ .checkmark {
+background-color: rgb(29, 29, 29);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+/* Show the indicator (dot/circle) when checked */
+.ctgLabels input:checked ~ .checkmark:after {
+    display: block;
+  }
+/* Style the indicator (dot/circle) */
+.ctgLabels .checkmark:after {
+    top: 5px;
+    left: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 4px;
+    background: white;
+  }
+.priceRange{
+    display: flex;
+    flex-direction: column;
+}
+.size{
+    display: flex;
+    flex-direction: column;
+}
+.sizeGrid{
+    background-color: #fff;
+    margin-bottom: 2px;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    gap:8px;
+}
+.sizeLabel{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+    background-color: #eee;
+    height: 32px;
+    border-radius: 4px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.sizeInput{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    }
+.sizeBox{
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.sizeLabel:hover .sizeBox{
+    background-color: #ccc;
+  }
+.sizeLabel input:checked ~ .sizeBox {
+background-color: #fff;
+border: 1px solid #ccc;
+transition: all 0.5s ease;
+}
