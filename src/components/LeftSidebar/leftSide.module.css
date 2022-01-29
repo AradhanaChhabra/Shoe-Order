@@ -99,6 +99,7 @@ background-color: rgb(29, 29, 29);
     grid-auto-rows: minmax(10px, auto);
     gap:8px;
 }
+
 .sizeLabel{
     flex-direction: column;
     justify-content: center;
@@ -133,4 +134,26 @@ background-color: rgb(29, 29, 29);
 background-color: #fff;
 border: 1px solid #ccc;
 transition: all 0.5s ease;
+}
+@media screen and (max-width: 992px) {
+    .sizeGrid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .categoriesOptions{
+        font-size: 12px;
+        padding: 4px;
+    }
+    .heading{
+        font-size: 14px;
+        padding: 8px;
+    }
+    .arrowImg{
+        height: 10px;
+    }
+    
+}
+@media screen and (max-width: 540px){
+    .container{
+        width: 38%;
+    }
 }
